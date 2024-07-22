@@ -1,0 +1,124 @@
+*/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+aside {
+    width: 30%;
+    background-color: #e9ecef;
+    padding: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Typography for headings and paragraphs */
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #0056b3;
+}
+
+h1 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+    font-size: 1.5rem; /* 24px */
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+/* Link Styling */
+a {
+    color: #007bff;
+    text-decoration: none; /* No underline by default */
+}
+
+a:hover, a:focus {
+    text-decoration: underline; /* Underline on hover/focus for better accessibility */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Image and Figure Styling */
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center; /* Centers the image and caption */
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Forms and Input Elements Styling - If you have forms in your HTML */
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%; /* Full width */
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+input[type="submit"], button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer; /* Hand icon on hover */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Styles */
+/* Add any specific styles for custom classes or IDs you have in your HTML */
